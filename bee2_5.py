@@ -27,6 +27,8 @@ class Bee:
 
     def flap(self): 
         self.speed=-10
+    
+    #Add a display() function to show the bee on the screen
         
 
 bee=Bee()
@@ -51,7 +53,8 @@ while True:
 
     screen.blit(images["bee"],bee) 
     screen.blit(images["base"],[groundx,550])
-   
+    #Call the display() method of bee object to display the bee on the screen. 
+      
     pygame.display.update()
     clock.tick(30)
     
