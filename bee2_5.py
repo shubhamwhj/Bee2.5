@@ -51,13 +51,12 @@ while True:
     if groundx< -330:
         groundx=0
 
-    screen.blit(images["bee"],bee) 
+    screen.blit(images["bee"],bee.bee) 
     screen.blit(images["base"],[groundx,550])
     #Call the display() method of bee object to display the bee on the screen. 
       
     pygame.display.update()
     clock.tick(30)
-    
     
     
     
